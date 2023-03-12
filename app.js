@@ -4,7 +4,7 @@ import startCells from './data/startCells.js';
 const gameBoard = document.querySelector('#gameboard');
 const counter = document.querySelector('#count');
 const infoDisplay = document.querySelector('#info');
-const recommencer = document.querySelector('#restart');
+const reload = document.querySelector('#restart');
 
 let compteur = 1;
 
@@ -25,4 +25,4 @@ const createBoard = () => {
 createBoard();
 
 // >> Restart the game
-recommencer.addEventListener('click', restart);
+reload.addEventListener('click', restart);
