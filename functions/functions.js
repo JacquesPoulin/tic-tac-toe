@@ -2,6 +2,7 @@ import winningCombos from '../data/winningCombos.js';
 
 const infoDisplay = document.querySelector('#info');
 const counter = document.querySelector('#count');
+const reload = document.querySelector('#restart');
 
 let go = 'cercle';
 let compteur = 1;
@@ -55,6 +56,7 @@ function draw() {
 		infoDisplay.textContent.includes('Prochain tour : croix')
 	) {
 		infoDisplay.textContent = `OUPS ! Il n'y a pas de vainqueurs ..`;
+		reload.textContent = 'REJOUER';
 	}
 }
 

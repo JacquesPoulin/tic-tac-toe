@@ -18,6 +18,7 @@ const createBoard = () => {
 		cellElement.id = index;
 		gameBoard.append(cellElement);
 		cellElement.addEventListener('click', addGo);
+		reload.textContent = "RECOMMENCER"
 	});
 };
 
